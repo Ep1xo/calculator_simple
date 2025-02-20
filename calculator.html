@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title> 
+  </head>
+  <body>
+    <div class="output">
+      <p class="result"></p>
+    </div>
+
+    <div class="calc">
+      <div class="numbers"></div>
+      <p>
+        <button class="number" onclick="upadeCalculation('1')">1</button>
+        <button class="number" onclick="upadeCalculation('2')">2</button>
+        <button class="number" onclick="upadeCalculation('3')">3</button>
+        <button class="symbol" onclick="upadeCalculation(' + '); ">+</button>
+      </p>
+      <p>
+        <button class="number" onclick="upadeCalculation('4')">4</button>
+        <button class="number" onclick="upadeCalculation('5')">5</button>
+        <button class="number" onclick="upadeCalculation('6')">6</button>
+        <button class="symbol" onclick="upadeCalculation(' - '); ">-</button>
+      </p>
+      <p>
+        <button class="number" onclick="upadeCalculation('7')">7</button>
+        <button class="number" onclick="upadeCalculation('8')">8</button>
+        <button class="number" onclick="upadeCalculation('9')">9</button>
+        <button class="symbol" onclick="upadeCalculation(' * '); ">*</button>
+      </p>
+      <p>
+        <button class="number" onclick="upadeCalculation('0')">0</button>
+        <button class="number" onclick="upadeCalculation(' . '); ">.</button>
+        <button class="number" onclick="calculation = eval(calculation);   document.querySelector('.result').innerHTML = calculation;">=</button>
+        <button class="symbol" onclick="upadeCalculation(' / '); ">/</button>
+      </p>     
+  
+      <button class="clear" onclick="clearCalculation()">Clear</button>
+    </div>
+    
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
